@@ -1,0 +1,184 @@
+Last login: Mon Apr 25 19:15:23 on ttys003
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/edgaraskalinauskas/Desktop/Testing/Tuta_Homework_six/.git/
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git config --global user.email "ekalinauskas@gmail.com"
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git config --global user.name "ekalinauskas"
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git add *
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git commitgit commit -m "My first hw commit to git"
+git: 'commitgit' is not a git command. See 'git --help'.
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git commit -m "My first hw commit to git" 
+[master (root-commit) e57ed98] My first hw commit to git
+ 1 file changed, 1 insertion(+)
+ create mode 100644 HelloWorld.txt
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git remote add origin https://github.com/ekalinauskas/TUTA_HW.git
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/ekalinauskas/TUTA_HW/pull/new/master
+remote: 
+To https://github.com/ekalinauskas/TUTA_HW.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git branch
+* master
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Tuta_HW/
+
+nothing added to commit but untracked files present (use "git add" to track)
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git checkout -b feature/add-goodbye-file
+Switched to a new branch 'feature/add-goodbye-file'
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git status
+On branch feature/add-goodbye-file
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	GoodBye.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git status
+On branch feature/add-goodbye-file
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	Iki.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git status
+On branch feature/add-goodbye-file
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	GoodBye.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git stage
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+	add
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git add .
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git status
+On branch feature/add-goodbye-file
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   GoodBye.txt
+
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git status
+On branch feature/add-goodbye-file
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   GoodBye.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    GoodBye.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Iki.txt
+
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git status
+On branch feature/add-goodbye-file
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   GoodBye.txt
+
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git add . 
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git status
+On branch feature/add-goodbye-file
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   GoodBye.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   GoodBye.txt
+
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % diff --git 
+diff: unrecognized option `--git'
+diff: Try `diff --help' for more information.
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % diff --git a/GoodBye.txt b/Goodbye.txt
+diff: unrecognized option `--git'
+diff: Try `diff --help' for more information.
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git diff
+diff --git a/GoodBye.txt b/GoodBye.txt
+index 3ea49f8..3fca99e 100644
+--- a/GoodBye.txt
++++ b/GoodBye.txt
+@@ -1 +1 @@
+-Labas
+\ No newline at end of file
++Iki
+\ No newline at end of file
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git add .
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git commit -m "Add GoodBye text file"  
+[feature/add-goodbye-file 9c56446] Add GoodBye text file
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .DS_Store
+ create mode 100644 GoodBye.txt
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git push -u origin
+fatal: The current branch feature/add-goodbye-file has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature/add-goodbye-file
+
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git merge feature/add-goodbye-file
+Updating e57ed98..9c56446
+Fast-forward
+ .DS_Store   | Bin 0 -> 6148 bytes
+ GoodBye.txt |   1 +
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .DS_Store
+ create mode 100644 GoodBye.txt
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git log --pretty=oneline
+9c564465b2252941a1e9281c034290a2f118a111 (HEAD -> master, feature/add-goodbye-file) Add GoodBye text file
+e57ed98c13c4c2b115b2d4781bd137d78310d1d9 (origin/master) My first hw commit to git
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 510 bytes | 510.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ekalinauskas/TUTA_HW.git
+   e57ed98..9c56446  master -> master
+branch 'master' set up to track 'origin/master'.
+edgaraskalinauskas@Edgarass-MacBook-Air Tuta_Homework_six % git push -u origin master
